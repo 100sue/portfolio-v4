@@ -1,18 +1,49 @@
-//Navigation bar effects on scroll
 
-//Portfolio section - Modal
+// Navigation bar effects on scroll :
+window.addEventListener("scroll", function() {
+    const header = document.querySelector("header");
+    header.classList.toggle('sticky', window.scrollY > 0);
 
-//Our clients - Swiper
+});
 
-//Website dark/light theme
+// Services section - Modal :
+const serviceModals = document.querySelectorAll(".service-modal");
+const learnmoreBtns = document.querySelectorAll(".learn-more-btn");
+const modalCloseBtns = document.querySelectorAll(".modal-close-btn");
 
-//Scroll to top button
+var modal = function(modalclick) {
+    serviceModals[modalclick].classList.add("active")
+}
 
-//Navigation menu items active on page scroll
+learnmoreBtns.forEach((learnmoreBtns, i) => {
+    learnmoreBtns.addEventListener("click", () => {
+        modal(i);
+    });
+});
 
-//Responsive navigation menu toggle
+modalCloseBtns.forEach((modalCloseBtns, i) => {
+    modalCloseBtns.addEventListener("click", () => {
+        serviceModals.forEach((modalView) => {
+            modalView.classList.remove("active");
+        });
+    });
+});
 
-//Scroll reveal animations
-//Common reveal options to create reveal animations
+// Portfolio section - Modal :
 
-//Target elements, and specify options to create reveal animations
+
+// Our clients - Swiper :
+
+// Website dark/light theme :
+
+// Scroll to top button :
+
+// Navigation menu items active on page scroll :
+
+// Responsive navigation menu toggle :
+
+// Scroll reveal animations :
+
+// Common reveal options to create reveal animations :
+
+// Target elements, and specify options to create reveal animationsk :
