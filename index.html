@@ -4,14 +4,25 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/swiper-bundle.min.css">
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css">
+    <script src="https://unpkg.com/scrollreveal"></script>
     <title>Document</title>
 </head>
 <body>
     <!--=======Scroll to top button=======-->
+<div class="scrollToTop-btn flex-center">
+  <i class="fas fa-arrow-up"></i>
 
+</div>
     <!--=======Light/Dark theme button=======-->
+<div class="theme-btn flex-center">
+  <i class="fas fa-moon"></i>
+  <i class="fas fa-sun"></i>
+
+</div>
+
 
     <!--=======Header=======-->
 <header>
@@ -19,7 +30,8 @@
     <a href="#" class="logo">Roland</a>
     <div class="navigation">
       <div class="nav-items">
-        <a href="#home">Home</a>
+        <div class="nav-close-btn"></div>
+        <a class="active" href="#home">Home</a>
         <a href="#about">About</a>
         <a href="#skills">Skills</a>
         <a href="#services">Services</a>
@@ -27,9 +39,10 @@
         <a href="#contact">Contact</a>
       </div>
     </div>
+    <div class="nav-menu-btn"></div>
   </div>
 </header>
-    <!--=======Home section=======-->
+                              <!--=======Home section=======-->
 <section class="home flex-center" id="home">
   <div class="home-container">
     <div class="media-icons">
@@ -37,55 +50,44 @@
       <a href="https://www.linkedin.com/in/roland-appert/"><i class="fa-brands fa-linkedin-in"></i></a>
       <a href="#"><i class="fa-brands fa-twitter"></i></a>
     </div>
-    <div class="class-info">
+    <div class="info">
       <h2>Hi, I am Roland</h2>
       <h3>Web developer</h3>
       <p>I create websites and apps for your business, and some others stuff.</p>
       <a href="#" class="btn">Contact Me <i class="fas fa-arrow-circle-right"></i></a>
     </div>
     <div class="home-img">
-      <img src="images/main-img.png" alt="photo du web developer">
+      <img src="images/main-img2.png" alt="photo du web developer">
     </div>
   </div>
   <a href="#about" class="scroll-down">Scroll Down <i class="fas fa-arrow-down"></i></a>
 </section>
-    <!--=======About section=======-->
+                              <!--=======About section=======-->
 <section class="about section" id="about">
   <div class="container flex-center">
     <h1 class="section-title-01">About Me</h1>
     <h2 class="section-title-02">About Me</h2>
     <div class="content flex-center">
       <div class="about-img">
-        <img src="images/about-img.png" alt="photo du web developer">
+        <img src="images/about-img2.jpg" alt="photo du web developer">
       </div>
       <div class="about-info">
         <div class="description">
           <h3>I'm Roland</h3>
           <h4>A <span>Full-Stack Developer</span> based in <span>Paris</span></h4>
-          <p>I create and develop services for customers specializing creating modern websites, web services and online.
+          <p>I started playing with computers when I was 15 years-old. <br> 
+            Since then I have been tinkering with all sort of technologies that in some way or another led me to work on.<br>
+            I create and develop services for customers specializing creating modern websites, web services and online.
             My passion is to create Apps and API and design digital user experiences through meaningful interactions.
           </p>
         </div>
-        <ul class="professional-list">
-          <li class="list-item">
-            <h3>3K+</h3>
-            <span>Years of<br>Experience</span>
-          </li>
-          <li class="list-item">
-            <h3>5+</h3>
-            <span>Happy<br>Customers</span>
-          </li>
-          <li class="list-item">
-            <h3>5+</h3>
-            <span>Success<br>Projects</span>
-          </li>
-        </ul>
+        
         <a href="https://100sue.github.io/curriculum/" class="btn">Download CV <i class="fas fa-download"></i></a>
       </div>
     </div>
   </div>
 </section>
-    <!--=======Skills section=======-->
+                              <!--=======Skills section=======-->
 <section class="skills section" id="skills">
   <div class="container flex-center">
     <h1 class="section-title-01">Skills</h1>
@@ -93,9 +95,8 @@
     <div class="content">
       <div class="skills-description">
         <h3>Education & Skills</h3>
-        <p>For more than 5 years our experts have been accomplishing enough with 
-        modern Web Developement, new generation web and app 
-        programming language.</p>
+        <p>Creation of sites and applications 
+          quickly and based on the latest technologies of the moment.</p>
       </div>
       <div class="skills-info education-all">
         <div class="education">
@@ -111,11 +112,7 @@
             </li>
             <li class="item">
               <span class="year">1996-1997</span>
-              <p><span>D.E.U.G. d'Administration Economique et Sociale</span> - Université Panthéon-Assas, Paris II</p>
-            </li>
-            <li class="item">
-              <span class="year">1992-1993</span>
-              <p><span>Baccalauréat Economique et Sociale</span> - Lycée Honoré de Balzac, Paris 17</p>
+              <p><span>DEUG Administration Economique et Sociale</span> - Université Panthéon-Assas,ParisII</p>
             </li>
           </ul>
         </div>
@@ -125,98 +122,86 @@
             <li class="bar">
               <div class="info">
                 <span>HTML</span>
-                <span>95%</span>
+                <span>90%</span>
               </div>
               <div class="line html"></div>
             </li>
             <li class="bar">
               <div class="info">
                 <span>CSS</span>
-                <span>95%</span>
+                <span>90%</span>
               </div>
               <div class="line css"></div>
             </li>
             <li class="bar">
               <div class="info">
                 <span>Javascript</span>
-                <span>80%%</span>
+                <span>85%</span>
               </div>
               <div class="line javascript"></div>
             </li>
             <li class="bar">
               <div class="info">
                 <span>Vue</span>
-                <span>80%%</span>
+                <span>88%</span>
               </div>
               <div class="line vue"></div>
             </li>
             <li class="bar">
               <div class="info">
+                <span>Node</span>
+                <span>85%</span>
+              </div>
+              <div class="line node"></div>
+            </li>
+          </ul>
+            <li class="bar">
+              <div class="info">
                 <span>SQL</span>
-                <span>80%%</span>
+                <span>88%</span>
               </div>
               <div class="line sql"></div>
             </li>
           </ul>
         </div>
         <div class="education">
-          <h4><label>Awards</label></h4>
-          <ul class="edu-list">
-            <li class="item">
-              <span class="year">2021</span>
-              <p><span>Best Developer </span> - University Of Melbourne, NA</p>
+          <h4><label>Skills under development</label></h4>
+          <ul class="bars">
+            <li class="bar">
+              <div class="info">
+                <span>Next</span>
+                <span>20%</span>
+              </div>
+              <div class="line Next"></div>
             </li>
-            <li class="item">
-              <span class="year">2020</span>
-              <p><span>Best Developer </span> - Online Typodev Soluation Ltd.</p>
+            <li class="bar">
+              <div class="info">
+                <span>Three</span>
+                <span>30%</span>
+              </div>
+              <div class="line three"></div>
             </li>
-            <li class="item">
-              <span class="year">2019</span>
-              <p><span>Best Developer </span> - Fiver & Upwork Level 2 & Top Rated</p>
+            <li class="bar">
+              <div class="info">
+                <span>Blender</span>
+                <span>10%</span>
+              </div>
+              <div class="line blender"></div>
+            </li>
+            <li class="bar">
+              <div class="info">
+                <span>React</span>
+                <span>18%</span>
+              </div>
+              <div class="line React"></div>
             </li>
           </ul>
-        </div>
-      </div>
-      <div class="skills-description">
-        <h3>Work & Experience</h3>
-      </div>
-      <div class="skills-info">
-        <div class="experience-card">
-          <div class="upper">
-            <h3>Sr. Graphic Designer</h3>
-            <h5>Part Time | Office</h5>
-            <span>2020 - 2021</span>
-          </div>
-          <div class="hr"></div>
-          <h4><label>Avada Theme.</label></h4>
-          <p>I design and develop services for customers of all sizes, specializing in 
-            creating stylish, modern websites</p>
-        </div>
-        <div class="experience-card">
-          <div class="upper">
-            <h3>Cr. Web Developer</h3>
-            <h5>Full Time | InHouse</h5>
-            <span>2019 - 2020</span>
-          </div>
-          <div class="hr"></div>
-          <h4><label>ib-themes ltd.</label></h4>
-          <p>I design and develop services for customers of all sizes, specializing in creating stylish, modern websites</p>
-        </div>
-        <div class="experience-card">
-          <div class="upper">
-            <h3>Jr. Web Developer</h3>
-            <h5>Full Time | Remote</h5>
-            <span>2018 - 2019</span>
-          </div>
-          <div class="hr"></div>
-          <h4><label>Creative Gigs.</label></h4>
-          <p>I design and develop services for customers of all sizes, specializing in creating stylish, modern websites</p>
         </div>
       </div>
     </div>
   </div>
 </section>
-    <!--=======Services section=======-->
+                              <!--=======Services section=======-->
 <section class="services section" id="services">
   <div class="container flex-center">
     <h1 class="section-title-01">Services</h1>
@@ -317,7 +302,7 @@
     </ul>
   </div>
 </section>
-    <!--=======Portfolio section=======-->
+                              <!--======= Portfolio section =======-->
 <section class="portfolio section " id="portfolio">
   <div class="container flex-center">
     <h1 class="section-title-01">Portfolio</h1>
@@ -343,24 +328,257 @@
                 aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris 
                 nisi ut aliquip ex ea commodo consequat.</p>
             </div>
-
-
+          </div>
+        </div>
+        <div class="img-card-container">
+          <div class="img-card">
+            <div class="overlay"></div>
+            <div class="info">
+              <h3>UI/UX Design</h3>
+              <span>Youtuber</span>
+            </div>
+            <img src="images/port-img2.jpg" alt="">
+          </div>
+          <div class="portfolio-model flex-center">
+            <div class="portfolio-model-body">
+              <i class="fas fa-times portfolio-close-btn"></i>
+              <h3>UI/UX Design</h3>
+              <img src="images/port-img2.jpg" alt="">
+              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod 
+                tempor incididunt ut labore et dolore magna
+                aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris 
+                nisi ut aliquip ex ea commodo consequat.</p>
+            </div>
+          </div>
+        </div>
+        <div class="img-card-container">
+          <div class="img-card">
+            <div class="overlay"></div>
+            <div class="info">
+              <h3>Branding & Design</h3>
+              <span>Youtuber</span>
+            </div>
+            <img src="images/port-img3.jpg" alt="">
+          </div>
+          <div class="portfolio-model flex-center">
+            <div class="portfolio-model-body">
+              <i class="fas fa-times portfolio-close-btn"></i>
+              <h3>Branding & Design</h3>
+              <img src="images/port-img3.jpg" alt="">
+              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod 
+                tempor incididunt ut labore et dolore magna
+                aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris 
+                nisi ut aliquip ex ea commodo consequat.</p>
+            </div>
+          </div>
+        </div>
+        <div class="img-card-container">
+          <div class="img-card">
+            <div class="overlay"></div>
+            <div class="info">
+              <h3>Web Development</h3>
+              <span>Youtuber</span>
+            </div>
+            <img src="images/port-img4.jpg" alt="">
+          </div>
+          <div class="portfolio-model flex-center">
+            <div class="portfolio-model-body">
+              <i class="fas fa-times portfolio-close-btn"></i>
+              <h3>Web Development</h3>
+              <img src="images/port-img4.jpg" alt="">
+              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod 
+                tempor incididunt ut labore et dolore magna
+                aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris 
+                nisi ut aliquip ex ea commodo consequat.</p>
+            </div>
+          </div>
+        </div>
+        <div class="img-card-container">
+          <div class="img-card">
+            <div class="overlay"></div>
+            <div class="info">
+              <h3>Content Writing</h3>
+              <span>Youtuber</span>
+            </div>
+            <img src="images/port-img5.jpg" alt="">
+          </div>
+          <div class="portfolio-model flex-center">
+            <div class="portfolio-model-body">
+              <i class="fas fa-times portfolio-close-btn"></i>
+              <h3>Content Writing</h3>
+              <img src="images/port-img5.jpg" alt="">
+              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod 
+                tempor incididunt ut labore et dolore magna
+                aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris 
+                nisi ut aliquip ex ea commodo consequat.</p>
+            </div>
+          </div>
+        </div>
+        <div class="img-card-container">
+          <div class="img-card">
+            <div class="overlay"></div>
+            <div class="info">
+              <h3>Interface Design</h3>
+              <span>Youtuber</span>
+            </div>
+            <img src="images/port-img6.jpg" alt="">
+          </div>
+          <div class="portfolio-model flex-center">
+            <div class="portfolio-model-body">
+              <i class="fas fa-times portfolio-close-btn"></i>
+              <h3>Interface Design</h3>
+              <img src="images/port-img6.jpg" alt="">
+              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod 
+                tempor incididunt ut labore et dolore magna
+                aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris 
+                nisi ut aliquip ex ea commodo consequat.</p>
+            </div>
           </div>
         </div>
       </div>
     </div>
   </div>
-
-</section>
-      <!--=======Get-in-touct=======-->
-      
+        <!--=======Get-in-touct=======-->
+<div class="get-in-touch sub-section">
+  <div class="container">
+    <div class="content flex-center">
+      <div class="contact-card flex-center">
+        <div class="title">
+          <h4>Let's Talk</h4>
+          <h3>About Your</h3>
+          <h2>Next Project</h2>
+        </div>
+        <div class="contact btn">
+          <a href="" class="btn">Get in Touch <i class="fas fa-paper-plane"></i></a>
+        </div>
+      </div>
+    </div>
+  </div>
+</div> 
       <!--=======Our Clients=======-->
-
+<div class="our-clients sub-section">
+  <div class="container flex-center">
+    <h1 class="section-title-01"></h1>
+    <h2 class="section-title-02"></h2>
+    <div class="content">
+      <div class="swiper client-swiper">
+        <div class="swiper-wrapper">
+          <div class="swiper-slide flex-center">
+            <div class="client-img">
+              <img src="images/client1.jpg" alt="">
+            </div>
+            <div class="clients-details">
+              <p>Hi, I’m Aria Collins and I am designer & developer who dream making the world better place by products. I am also very active for international clients.</p>
+              <h3>Aria Collins</h3>
+              <span>Marketing Manager</span>
+            </div>
+          </div>
+          <div class="swiper-slide flex-center">
+            <div class="client-img">
+              <img src="images/client2.jpg" alt="">
+            </div>
+            <div class="clients-details">
+              <p>This is outstanding work. Everything I needed to do has been done by the makers. I really like this template and more importantly my clients are blown away by it.</p>
+              <h3>Cillian Metcalfe</h3>
+              <span>Graphic Designer</span>
+            </div>
+          </div>
+          <div class="swiper-slide flex-center">
+            <div class="client-img">
+              <img src="images/client3.jpg" alt="">
+            </div>
+            <div class="clients-details">
+              <p>These people really know what they are doing! Great customer support availability and supperb kindness. I am very happy that I've purchased this liscense!!!</p>
+              <h3>Kianna Baird</h3>
+              <span>App Developer</span>
+            </div>
+          </div>
+        </div>
+        <div class="swiper-button-next"><i class="fas fa-chevron-right"></i></div>
+        <div class="swiper-button-prev"><i class="fas fa-chevron-left"></i></div>
+        <div class="swiper-pagination"></div>
+      </div>
+    </div>
+  </div>
+</div>
+</section>
     <!--=======Contact section=======-->
-
+<section class="contact section" id="contact">
+  <div class="container flex-center">
+    <h1 class="section-title-01">Contact Me</h1>
+    <h2 class="section-title-02">Contact Me</h2>
+    <div class="content">
+      <div class="contact-left">
+        <h2>Let's discuss your project</h2>
+        <ul class="contact-list">
+          <li>
+            <h3 class="item-title"><i class="fas fa-phone"></i> Phone</h3>
+            <span>+33 060-348-0753</span>
+          </li>
+          <li >
+            <h3 class="item-title"><i class="fas fa-envelope"></i> Email Address</h3>
+            <span><a href="mailto:scoreur@gmail.com">scoreur@gmail.com</a></span>
+          </li>
+          <li>
+            <h3 class="item-title"><i class="fas fa-map-marker-alt"></i> Official Address</h3>
+            <span>Rue Pouchet, 75017 Paris, France</span>
+          </li>
+        </ul>
+      </div>
+      <div class="contact-right">
+        <p>I'm always open to discussing product<br><span>design work or patnerships.</span></p>
+        <form action="" class="contact-form">
+          <div class="first-row">
+            <input type="text" placeholder="Name">
+          </div>
+          <div class="second-row">
+            <input type="email" placeholder="Email">
+            <input type="text" placeholder="Subject">
+          </div>
+          <div class="third-row">
+            <textarea name="message" id="" rows="7" placeholder="Message"></textarea>
+          </div>
+          <button class="btn" type="submit">Send Message <i class="fas fa-paper-plane"></i> </button>
+        </form>
+      </div>
+    </div>
+  </div>
+</section>
     <!--=======Footer=======-->
+<footer>
+  <div class="footer-container">
+    <div class="about group">
+      <h2>Roland</h2>
+      <p>Developer Full Stack</p>
+      <a href="#about">About Me</a>
+    </div>
+    <div class="hr"></div>
+    <div class="info group">
+      <h3>More</h3>
+      <ul>
+        <li><a href="#skills">Skills</a></li>
+        <li><a href="#ervices">Services</a></li>
+        <li><a href="#portfolio">Portfolio</a></li>
+        <li><a href="#skills">Contact</a></li>
+      </ul>
+    </div>
+    <div class="hr"></div>
+    <div class="follow group">
+      <h3>Follow</h3>
+    <ul>
+      <li><a href="https://github.com/100sue"><i class="fab fa-github"></i></a></li>
+      <li><a href="https://linkedin.com/in/roland-appert/"><i class="fab fa-linkedin-in"></i></a></li>
+      <li><a href=""><i class="fab fa-twitter"></i></a></li>
+    </ul>
+    </div>
+  </div>
+  <div class="footer-copyright group">
+    <p>© 2022 by Roland APPERT. All rights reserved.</p>
+  </div>
+</footer>
 
     <!--=======External scripts=======-->
+    <script src="js/swiper-bundle.min.js"></script>
     <script src="js/main.js"></script>
 </body>
 </html>
