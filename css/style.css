@@ -497,6 +497,22 @@ header.sticky .nav-bar {
 .bar .sql:before {
       width: 85%;
 }
+.bar .css:before {
+      width: 90%;
+}
+
+.bar .nuxt:before {
+      width: 20%;
+}
+.bar .three:before {
+      width: 30%;
+}
+.bar .blender:before {
+      width: 10%;
+}
+.bar .react:before {
+      width: 18%;
+}
 
 .experience-card {
       background: var(--card-bg-color);
