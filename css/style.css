@@ -482,9 +482,6 @@ header.sticky .nav-bar {
 .bar .html:before {
       width: 90%;
 }
-.bar .css:before {
-      width: 90%;
-}
 .bar .javascript:before {
       width: 85%;
 }
@@ -495,10 +492,10 @@ header.sticky .nav-bar {
       width: 85%;
 }
 .bar .sql:before {
-      width: 85%;
+      width: 88%;
 }
-.bar .css:before {
-      width: 90%;
+.bar .mongo:before {
+      width: 88%;
 }
 
 .bar .nuxt:before {
@@ -513,7 +510,12 @@ header.sticky .nav-bar {
 .bar .react:before {
       width: 18%;
 }
-
+.bar .firebase:before {
+      width: 56%;
+}
+.bar .webrtc:before {
+      width: 65%;
+}
 .experience-card {
       background: var(--card-bg-color);
       border-bottom: 3px solid var(--second-color);
@@ -709,8 +711,11 @@ header.sticky .nav-bar {
       height: 100%;
       object-fit: cover;
  }
+ .portfolio-list .img-card a:hover {
+      background: red;
+ }
  .portfolio-model {
-      z-index: 999;
+      z-index: 99999;
       position: fixed;
       width: 100%;
       height: 100vh;

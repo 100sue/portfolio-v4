@@ -40,9 +40,9 @@ var portfolioModal = function(modalclick) {
     portfolioModals[modalclick].classList.add("active")
 }
 
-learnmoreBtns.forEach((imgCard, i) => {
+imgCards.forEach((imgCard, i) => {
     imgCard.addEventListener("click", () => {
-        modal(i);
+        portfolioModal(i);
     });
 });
 
